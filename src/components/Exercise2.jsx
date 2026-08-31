@@ -1,7 +1,7 @@
 import { devices } from "../data/data";
 
 const Exercise2 = () => {
-  const listDevices = devices
+  const deviceList = devices
     .filter((device) => device.width >= 700)
     .map((device) => (
       <li key={device.id}>
@@ -9,7 +9,7 @@ const Exercise2 = () => {
       </li>
     ));
 
-  return <ul>{listDevices}</ul>;
+  return <ul>{deviceList}</ul>;
 };
 
 export default Exercise2;
